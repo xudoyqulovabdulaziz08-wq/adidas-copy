@@ -8,11 +8,13 @@ import Carousel2 from './Carousel2'
 import Carousel3 from './Carouisel3'
 import Carouseltex from './Carouseltex'
 import Xayrulla from './hayrulla/hayrulla'
+import Banner from './banner/Banner'
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Banner/>
       <Xayrulla />
       <Carousel />
       <Carousel2 />
