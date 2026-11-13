@@ -6,6 +6,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import { Link } from 'react-router-dom';
 
 const texter = [
   "FREE STANDARD SHIPPING WITH ADICLUB",
@@ -102,10 +103,10 @@ const Navbar = () => {
       <div className="bg-white border-b border-gray-200 px-6 md:px-12">
     
         <div className="hidden lg:flex justify-end items-center gap-5 text-[11px] text-gray-700 pt-2 ">
-          <a href="#" className="hover:underline">store finder</a>
-          <a href="#" className="hover:underline">help</a>
-          <a href="#" className="hover:underline">orders and returns</a>
-          <a href="#" className="hover:underline">gift cards</a>
+          <a href="https://www.adidas.com/us/stores" className="hover:underline">store finder</a>
+          <a href="https://www.adidas.com/us/help" className="hover:underline">help</a>
+          <a href="https://www.adidas.com/us/order-tracker" className="hover:underline">orders and returns</a>
+          <a href="https://www.adidas.com/us/giftcards" className="hover:underline">gift cards</a>
           <a href="#" className="hover:underline">join adiClub</a>
         </div>
 
@@ -140,7 +141,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="bg-transparent text-sm text-black placeholder-gray-600 focus:outline-none w-full"
+                className="bg-transparent text-sm text-black placeholder-gray-600 focus:outline-none w-full  "
               />
               <SearchIcon className="text-black cursor-pointer" fontSize="small" />
             </div>
@@ -155,12 +156,16 @@ const Navbar = () => {
 
            
             <button className="p-1 cursor-pointer" aria-label="Wishlist">
-              <FavoriteBorderOutlinedIcon />
+              <a href="https://www.adidas.com/us/wishlists"><FavoriteBorderOutlinedIcon /></a>
+              
             </button>
 
            
             <button className="p-1 cursor-pointer" aria-label="Cart">
-              <ShoppingBagOutlinedIcon />
+              <a href="https://www.adidas.com/us/cart">
+                <ShoppingBagOutlinedIcon />
+              </a>
+              
             </button>
           </div>
         </div>
@@ -172,7 +177,10 @@ const Navbar = () => {
         <p className="text-xs font-bold text-black text-center">
           Up to 60% off for members during Black Friday First Access. Log in now
         </p>
-        <ArrowRightAltIcon fontSize="small" className="text-black" />
+        <a href="https://www.adidas.com/us?sp=true&section=MEMBERSHIP_PANEL">
+          <ArrowRightAltIcon fontSize="small" className="text-black" />
+        </a>
+        
       </div>
     </header>
   );

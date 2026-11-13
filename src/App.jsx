@@ -7,11 +7,13 @@ import Carousel from './Carousel'
 import Carousel2 from './Carousel2'
 import Carousel3 from './Carouisel3'
 import Carouseltex from './Carouseltex'
+import Xayrulla from './hayrulla/hayrulla'
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Xayrulla />
       <Carousel />
       <Carousel2 />
       <Carousel3 />
